@@ -1,6 +1,7 @@
 import { useSearchParams } from "react-router-dom"
 import { Container } from "react-bootstrap"
 import { allGenresObj } from "../../utils/genresObj" 
+import { useLoaderContext } from "../../contexts/LoaderContext"
 import useGenre from "../../hooks/useGenre"
 import MovieCard from "../../components/Card/MovieCard"
 import Pagination from "../../components/Pagination"
@@ -8,6 +9,7 @@ import Pagination from "../../components/Pagination"
 import stylesShared from '../../css/sharedStyles/Card/Card.module.css'
 
 export default function MovieGenre() {
+  const { loading } = useLoaderContext()
   const [searchParams] = useSearchParams()
   const genreId = searchParams.get('id')
   const movies = useGenre(genreId)
@@ -23,8 +25,10 @@ export default function MovieGenre() {
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
-
-        <Pagination movies={movies} genreId={genreId}/>
+        
+        {!loading && (
+          <Pagination movies={movies} genreId={genreId}/>
+        )}
       </Container>
     </main>
   )

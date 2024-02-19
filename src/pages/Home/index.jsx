@@ -5,7 +5,7 @@ import { useScrollContext } from "../../contexts/ScrollContext"
 import ListGenre from "../../components/Home/ListGenre"
 import TitleLine from '../../components/Home/TitleLine'
 import LatestMovies from "../../components/Home/LatestMovies"
-import GenreCard from "../../components/Card/genreCard"
+import GenreCard from "../../components/Card/GenreCard"
 import Streamings from "../../components/Home/Streamings"
 
 import styles from './Home.module.css'
