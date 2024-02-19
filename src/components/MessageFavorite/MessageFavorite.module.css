@@ -1,0 +1,37 @@
+.containerMessage {
+  color: #000;
+  padding: 1rem 0.4rem;
+  border-radius: 6px 6px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-style: italic;
+  width: 100%;
+  font-size: 0.95rem;
+  z-index: 999;
+}
+
+.containerMessage.show {
+  animation: upMessage .7s ease;
+  transform: translateY(0);
+}
+
+@keyframes upMessage {
+  from { bottom: -4rem; }
+
+  to { bottom: 0; }
+}
+
+.bgGreen {
+  background-color: #4CAF50;
+}
+
+.bgRed {
+  background-color: #FF5252;
+}
+
+@media (min-width: 768px) {
+  .containerMessage {
+    font-size: 1.05rem;
+  }
+}

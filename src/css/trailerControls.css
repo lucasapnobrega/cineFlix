@@ -1,0 +1,30 @@
+.customNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-prev {
+  left: 0.5rem;
+  font-size: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.custom-next {
+  right: 0.5rem;
+  font-size: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.custom-prev:hover, .custom-next:hover {
+  color: #1560BD;
+}
+
+.swiper-button-disabled {
+  color: #5e5c5c;
+  display: none;
+}

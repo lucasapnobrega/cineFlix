@@ -1,0 +1,99 @@
+.cardGenre {
+  display: flex; 
+}
+
+.cardGenreInfo {
+  background-color: #000;
+  padding: 0.5rem;
+  height: 115px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 160px;
+}
+
+.cardGenreInfo span {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.containerImg img {
+  width: 160px;
+  min-height: 260px;
+  border-radius: 8px 8px 0 0;
+}
+
+.titleAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.titleAndButton h2 {
+  font-size: 1.6rem;
+}
+
+.titleAndButton a {
+  max-width: 9rem;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #1560BD;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.titleAndButton a:hover {
+  color: #fff;
+  background-color: #1560BD;
+}
+
+
+
+@media (min-width: 768px) {
+  .titleAndButton {
+    flex-direction: row;
+  }
+
+  .titleAndButton a {
+    width: 10rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerImg {
+    overflow: hidden;
+  }
+
+  .containerImg img {
+    filter: brightness(1);
+    transition: all .6s;
+  }
+
+  .linkMovieGenre:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+  }
+}
+
+@media (min-width: 1200px) {
+  .titleAndButton a {
+    font-size: 1rem;
+  }
+  
+  .containerImg img {
+    width: 200px;
+    min-height: 300px;
+  }
+
+  .cardGenreInfo {
+    width: 200px;
+  }
+}

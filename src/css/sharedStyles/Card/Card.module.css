@@ -1,0 +1,119 @@
+.title {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 3.5rem 0 3rem;
+}
+
+.title .queryText {
+  color: #e0b722;
+}
+
+.title svg {
+  color: #C0C0C0;
+}
+
+/* moviesFlex */
+.moviesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 330px));
+  place-content: center;
+  gap: 2rem;
+}
+
+.moviesContainer .movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+  background-color: #1a1818;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.moviesContainer .movieCard h2 {
+  max-width: 300px;
+}
+
+.moviesContainer .movieCard a {
+  background-color: #1560BD;
+  border: 2px solid #1560BD;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all .4s;
+}
+
+.moviesContainer .movieCard a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+
+
+/* movieCard */
+.movieCardMargin {
+  padding-top: 6rem;
+}
+
+.movieCard {
+  text-align: center;
+}
+
+.movieCard img {
+  height: 450px;
+}
+
+.titleAndYear {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.movieCard img, 
+.movieCard h2, 
+.movieCard p {
+  margin-bottom: 1.5rem;
+}
+
+.movieCard img {
+  border-radius: 8px;
+  width: 300px;
+}
+
+.imgMoviePage {
+  box-shadow: 2px 2px 12px rgb(66, 63, 63);
+}
+
+.movieCard p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.wrapperStarFavorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .movieCard h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .titleAndYear{
+    font-size: 2.4rem;
+  }
+}

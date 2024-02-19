@@ -1,0 +1,60 @@
+.moviePage {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoPage svg {
+  font-size: 1.5rem;
+  color: #1560BD;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  font-style: italic;
+}
+
+.wrapperInfo {
+  max-width: 800px;
+}
+
+.titleMainCast {
+  margin: 3rem 0 2rem;
+  color: #e6dede;
+  letter-spacing: 1px;
+}
+
+.cast {
+  display: flex;
+  overflow: auto;
+  max-width: 93.5vw;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btnBack {
+  background-color: #1560BD;
+  border: 2px solid #1560BD;
+  color: #fff;
+  width: 45%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin: 3rem 0 0;
+  text-align: center;
+  transition: all .4s;
+}
+
+.btnBack:hover {
+  background-color: transparent;
+  border: 2px solid #1560BD;
+  color: #fff;
+  transform: translateX(-2px);
+}
+
+@media (min-width: 768px) {
+  .btnBack {
+    width: 25%;
+  }
+}

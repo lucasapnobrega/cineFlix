@@ -1,0 +1,64 @@
+.cardGenre {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0.7rem;
+  border-radius: 8px;
+  transition: all .4s;
+}
+
+.cardGenreIcon svg {
+  font-size: 1.6rem;
+  color: #1560BD;
+  margin-right: 1.2rem;
+}
+
+.cardGenre:hover {
+  background-color: #1b191973;
+}
+
+.cardGenre:hover span {
+  color: #fff;
+}
+
+.cardGenreInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardGenreInfo span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.cardGenreInfo span svg {
+  color: #1560BD;
+}
+
+.cardGenreInfo svg {
+  transition: all .4s;
+}
+
+.cardGenre:hover span svg {
+  transform: translateX(8px);
+}
+
+.seeAll {
+  color:#ccc;
+}
+
+@media (min-width: 768px) {
+  .cardGenreIcon svg {
+    font-size: 2rem;
+  }
+
+  .cardGenreInfo span {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+}

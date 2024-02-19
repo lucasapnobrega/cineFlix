@@ -1,0 +1,113 @@
+.movieCard {
+  background-color: #1a1818;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  max-width: 335px;
+  padding: 1rem;
+  box-shadow: 2px 2px 12px rgb(48, 47, 47);
+}
+
+.movieCard img {
+  max-width: 300px;
+  max-height: 450px;
+  border-radius: 8px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cardContent h2 {
+  text-align: center;
+}
+
+.wrapperStarFavorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.star svg {
+  font-size: 1.5rem;
+  color: #ffee00 
+}
+
+.wrapperStarFavorite p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.description span {
+  font-weight: bold;
+  color: #1560BD;
+  letter-spacing: 1px;
+}
+
+.cardContent a {
+  background-color: #1560BD;
+  border: 2px solid #1560BD;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  transition: all .4s;
+}
+
+.cardContent a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .movieCard {
+    display: flex;
+    flex-direction: row;
+    max-width: 1116px;
+    padding: 0;
+    transition: all 0.5s ease;
+  }
+
+  .movieCard img {
+    min-height: 100%;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .cardContent {
+    padding: 1.5rem;
+  }
+
+  .cardContent h2 {
+    text-align: left;
+  }
+
+  .wrapperStarFavorite {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .bgCard {
+    background-size: 100%;
+    min-height: 450px;
+  }
+
+  .bgCard h2 {
+    color: #cf2222;
+    font-weight: bold;
+  }
+
+  .bgCard .cardContent, .bgCard .wrapperStarFavorite {
+    background-color: transparent;
+  }
+}

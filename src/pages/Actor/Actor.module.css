@@ -1,0 +1,163 @@
+.cardActor {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.wrapperInitial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.actorName {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.imageActor {
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.actorExtraInfo h3 {
+  margin-bottom: 1rem;
+}
+
+.popularity {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.bio {
+  letter-spacing: 1px;
+  color: #eeeaea;
+}
+
+.actorExtraInfo {
+  margin: 1rem 0;
+}
+
+.actorExtraInfo p span {
+  color: #1560BD;
+}
+
+.cardsActorMovies > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 170px));
+  place-content: center;
+  gap: 1.8rem 0.4rem;
+}
+
+.cardActorMovie {
+  transition: all .4s;
+}
+.cardActorMovie:hover {
+  transform: translateY(12px);
+}
+
+
+.cardActorMovie img {
+  width: 170px;
+  border-radius: 12px;
+}
+
+.cardActorMovie p {
+  max-width: 160px;
+  margin-top: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  .cardsActorMovies div {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    gap: 1.8rem;
+  }
+
+  .cardActorMovie img {
+    width: 200px;
+  }
+
+  .cardActorMovie p {
+    max-width: 200px;
+    margin-top: 0.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapperInitial {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2.8rem;
+  }
+
+  .actorMainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .imageActor {
+    box-shadow: 0px 0px 4px 2px rgba(58, 58, 59, 0.5);
+    margin: 0;
+  }
+  
+  .actorName {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+
+  .popularity {
+    text-align: left;
+  }
+
+  .cardsActorMovies > div {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .cardActorMovie img  {
+    width: 220px;
+  }
+
+  .cardActorMovie p {
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cardsActorMovies > div {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 260px));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .cardActorMovie img  {
+    width: 260px;
+  }
+
+  .cardActorMovie p {
+    max-width: 260px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .cardsActorMovies > div {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
+    gap: 1.5rem;
+  }
+
+  .cardActorMovie img  {
+    width: 240px;
+  }
+
+  .cardActorMovie p {
+    max-width: 240px;
+  }
+}

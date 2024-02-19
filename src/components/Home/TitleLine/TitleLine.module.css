@@ -1,0 +1,35 @@
+.title {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 2rem 3rem;
+}
+
+.horizontalLine {
+  display: flex;
+  align-items: center; 
+}
+
+.line {
+  height: 2px;
+  flex-grow: 1;
+}
+
+.lineLeft {
+  background-image: linear-gradient(to right, #1560BD, transparent);
+}
+
+.lineRight {
+  background-image: linear-gradient(to right, transparent, #1560BD);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}

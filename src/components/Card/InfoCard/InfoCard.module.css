@@ -1,0 +1,19 @@
+.info {
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  line-height: 1.4rem;
+}
+
+.info h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.info svg {
+  color: #1560BD;
+}

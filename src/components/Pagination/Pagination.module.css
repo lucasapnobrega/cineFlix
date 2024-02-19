@@ -1,0 +1,21 @@
+.btnPaginationWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.btnPaginationWrapper svg {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff0000;
+  transition: all .4s;
+}
+
+.btnPaginationWrapper svg:hover {
+  color: #854e4e;
+}
+
+.iconBlocked {
+  color: #854e4e !important;
+  cursor: not-allowed !important;
+}

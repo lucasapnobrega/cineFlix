@@ -1,0 +1,91 @@
+.streaming {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streaming h3 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.streamingLogos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.streamingLogos img {
+  width: 200px;
+  transition: all .4s;
+}
+
+.streamingLogos img:hover {
+  transform: scale(1.1) !important;
+}
+
+.streamingLogos .netflixLogo {
+  height: 70px;
+}
+
+.streamingLogos .HBOLogo {
+  width: 160px;
+  filter: invert();
+}
+
+.arrowBottom {
+  position: absolute;
+  top: -10rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all .4s;
+  animation: moveArrow 1s infinite ease-in-out;
+}
+
+.arrowBottom:hover {
+  color: #1560BD;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .streamingLogos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .streamingLogos a {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .streamingLogos a {
+    width: auto;
+  }
+
+  .streamingLogos img {
+    width: 200px;
+  }
+}

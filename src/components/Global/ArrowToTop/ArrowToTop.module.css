@@ -1,0 +1,22 @@
+.arrowToTop {
+  color: #fff;
+  font-size: 2.2rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: all .4s;
+  z-index: 999;
+}
+
+.arrowToTop:hover {
+  transform: translateY(-8px);
+  color: #1560BD;
+}
+
+@media (min-width: 1024px) {
+  .arrowToTop {
+    bottom: 0.5rem;
+    right: 1.5rem;
+  }
+}
