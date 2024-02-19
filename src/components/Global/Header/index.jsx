@@ -23,7 +23,7 @@ export default function Header({ isHome = true }) {
     <header className={`${styles.header} ${!isHome && styles.backgroundColor} ${active && styles.headerOpen}`}>
       <Container className={styles.container}>
         <h2>
-          <Link to="/">
+          <Link to="/" onClick={toggleMode}>
             {isDesktop && <BiMoviePlay />} CineFlix 
           </Link>
         </h2>
