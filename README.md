@@ -15,4 +15,4 @@ Utilizei algumas bibliotecas que me ajudaram bastante, como React Router, React 
 
 Seguindo aprendendo e tentando aprimorar cada vez mais!
 
-https://cine-flix-six.vercel.app/
+Deploy: https://cine-flix-six.vercel.app/
