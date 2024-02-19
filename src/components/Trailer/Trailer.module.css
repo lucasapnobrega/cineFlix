@@ -13,10 +13,10 @@
 
 .overlayContent {
   position: relative;
-  top: 15%;
+  top: 14%;
   width: 100%;
   text-align: center; 
-  margin-top: 30px;
+  margin-top: 1.2rem;
 }
 
 .overlay a {
@@ -72,7 +72,7 @@ iframe {
 
 .titleTrailer {
   margin: 0 auto 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: bold;
   max-width: 700px;

@@ -2,7 +2,7 @@
   color: #fff;
   font-size: 2.2rem;
   position: fixed;
-  bottom: 2rem;
+  bottom: 0.5rem;
   right: 1rem;
   cursor: pointer;
   transition: all .4s;
@@ -16,7 +16,6 @@
 
 @media (min-width: 1024px) {
   .arrowToTop {
-    bottom: 0.5rem;
     right: 1.5rem;
   }
 }
