@@ -14,3 +14,5 @@ CineFlix
 Utilizei algumas bibliotecas que me ajudaram bastante, como React Router, React Icons, React Responsive, Swiper.
 
 Seguindo aprendendo e tentando aprimorar cada vez mais!
+
+https://cine-flix-six.vercel.app/
